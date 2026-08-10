@@ -84,7 +84,7 @@
 
     .filtros button {
       background: #17171a;
-      border: 1px solid #333;
+      border: 1px solid #7C3AED;
       color: #ddd;
       padding: 10px 15px;
       border-radius: 20px;
@@ -92,7 +92,7 @@
     }
 
     .filtros button:hover {
-      background: #29292d;
+      background: #7C3AED;
     }
 
     .grid {
@@ -101,17 +101,18 @@
       gap: 20px;
     }
 
-    .peca {
-      background: #151518;
-      border: 1px solid #29292d;
-      border-radius: 18px;
+  .peça {
+    background: #151518;
+    border: 1px solid #29292d;
+    border-radius: 18px;
       overflow: hidden;
       transition: transform 0.2s;
     }
 
-    .peca:hover {
-      transform: translateY(-4px);
-    }
+    .peça:hover {
+    transform: translateY(-4px);
+    border-color: #7C3AED;
+}
 
     .foto {
       width: 100%;
@@ -128,37 +129,34 @@
       padding: 18px;
     }
 
-    .info h3 {
-      font-size: 20px;
-      margin-bottom: 8px;
-    }
-
+    .status {
+  display: inline-block;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: #25252a;
+  color: #ddd;
+  border: 1px solid #7C3AED;
+}
     .categoria {
       color: #999;
       font-size: 14px;
       margin-bottom: 15px;
     }
 
-    .status {
-      display: inline-block;
-      font-size: 12px;
-      padding: 6px 10px;
-      border-radius: 20px;
-      background: #25252a;
-      color: #ddd;
-    }
-
-    .preco {
-      margin-top: 18px;
-      font-size: 20px;
-      font-weight: bold;
-    }
+  
+   .preco {
+  margin-top: 18px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #7C3AED;
+}
 
     footer {
       margin-top: 80px;
       padding: 40px 20px;
       text-align: center;
-      border-top: 1px solid #29292d;
+      border-top: 1px solid #7C3AED;
       color: #777;
       font-size: 13px;
     }
@@ -196,43 +194,107 @@
 
     <div class="grid">
 
-      <article class="peca">
-        <div class="foto">
-          FOTO DA PEÇA
-        </div>
-
-        <div class="info">
-          <h3>Minha primeira peça</h3>
-          <div class="categoria">Figura • Resina</div>
-          <span class="status">Em produção</span>
-          <div class="preco">R$ 000,00</div>
-        </div>
-      </article>
-
-      <article class="peca">
-        <div class="foto">
-          FOTO DA PEÇA
-        </div>
-
-        <div class="info">
-          <h3>Nova peça</h3>
-          <div class="categoria">Busto • Resina</div>
-          <span class="status">Disponível</span>
-          <div class="preco">R$ 000,00</div>
-        </div>
-      </article>
-
-      <article class="peca">
-        <div class="foto">
-          FOTO DA PEÇA
-        </div>
-
-        <div class="info">
-          <h3>Projeto especial</h3>
-          <div class="categoria">Diorama</div>
-          <span class="status">Vendida</span>
-          <div class="preco">R$ 000,00</div>
+  <article class="peca">
+    <div class="foto">FOTO DA PEÇA</div>
+    <div class="info">
+      <h3>Peça 01</h3>
+      <div class="categoria">Figura • Resina</div>
+      <span class="status">Disponível</span>
+      <div class="preco">R$ 00,00</div>
     </div>
+  </article>
+
+  <article class="peca">
+    <div class="foto">FOTO DA PEÇA</div>
+    <div class="info">
+      <h3>Peça 02</h3>
+      <div class="categoria">Figura • Resina</div>
+      <span class="status">Disponível</span>
+      <div class="preco">R$ 00,00</div>
+    </div>
+  </article>
+
+  <article class="peca">
+    <div class="foto">FOTO DA PEÇA</div>
+    <div class="info">
+      <h3>Peça 03</h3>
+      <div class="categoria">Busto • Resina</div>
+      <span class="status">Disponível</span>
+      <div class="preco">R$ 00,00</div>
+    </div>
+  </article>
+
+  <article class="peca">
+    <div class="foto">FOTO DA PEÇA</div>
+    <div class="info">
+      <h3>Peça 04</h3>
+      <div class="categoria">Busto • Resina</div>
+      <span class="status">Em produção</span>
+      <div class="preco">R$ 00,00</div>
+    </div>
+  </article>
+
+  <article class="peca">
+    <div class="foto">FOTO DA PEÇA</div>
+    <div class="info">
+      <h3>Peça 05</h3>
+      <div class="categoria">Diorama</div>
+      <span class="status">Disponível</span>
+      <div class="preco">R$ 00,00</div>
+    </div>
+  </article>
+
+  <article class="peca">
+    <div class="foto">FOTO DA PEÇA</div>
+    <div class="info">
+      <h3>Peça 06</h3>
+      <div class="categoria">Figura • Resina</div>
+      <span class="status">Disponível</span>
+      <div class="preco">R$ 00,00</div>
+    </div>
+  </article>
+
+  <article class="peca">
+    <div class="foto">FOTO DA PEÇA</div>
+    <div class="info">
+      <h3>Peça 07</h3>
+      <div class="categoria">Figura • Resina</div>
+      <span class="status">Vendida</span>
+      <div class="preco">R$ 00,00</div>
+    </div>
+  </article>
+
+  <article class="peca">
+    <div class="foto">FOTO DA PEÇA</div>
+    <div class="info">
+      <h3>Peça 08</h3>
+      <div class="categoria">Busto • Resina</div>
+      <span class="status">Disponível</span>
+      <div class="preco">R$ 00,00</div>
+    </div>
+  </article>
+
+  <article class="peca">
+    <div class="foto">FOTO DA PEÇA</div>
+    <div class="info">
+      <h3>Peça 09</h3>
+      <div class="categoria">Diorama</div>
+      <span class="status">Em produção</span>
+      <div class="preco">R$ 00,00</div>
+    </div>
+  </article>
+
+  <article class="peca">
+    <div class="foto">FOTO DA PEÇA</div>
+    <div class="info">
+      <h3>Peça 10</h3>
+      <div class="categoria">Figura • Resina</div>
+      <span class="status">Disponível</span>
+      <div class="preco">R$ 00,00</div>
+    </div>
+  </article>
+
+</div>
   </section>
 
   <footer>
