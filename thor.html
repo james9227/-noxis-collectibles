@@ -49,11 +49,32 @@
         }
 
         .detalhes {
-            display: grid;
-            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-            gap: 50px;
-            align-items: start;
-        }
+         .detalhes {
+    display: flex;
+    gap: 28px;
+    margin: 22px 0;
+    padding: 16px 0;
+    border-top: 1px solid #29292d;
+    border-bottom: 1px solid #29292d;
+}
+
+.detalhes div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.detalhes small {
+    color: #888;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.detalhes strong {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
 
         .imagem {
             background: #151515;
@@ -144,11 +165,22 @@
 <div class="categoria">Figura • Resina</div>
 
 <div class="detalhes">
-    <span>Escala 1/6</span>
-    <span>39 cm de altura</span>
-    <span>16 cm de largura</span>
-</div>
+   <div class="detalhes">
+    <div>
+        <small>ESCALA</small>
+        <strong>1/6</strong>
+    </div>
 
+    <div>
+        <small>ALTURA</small>
+        <strong>39 cm</strong>
+    </div>
+
+    <div>
+        <small>LARGURA</small>
+        <strong>16 cm</strong>
+    </div>
+</div>
 <span class="status render">RENDER • PROJETO</span>
 
        <h2>Sobre o projeto</h2>
