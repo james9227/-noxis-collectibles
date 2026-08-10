@@ -79,18 +79,42 @@
     font-weight: 500;
 }
 
-        .imagem {
-            background: #151515;
-            border: 1px solid #29292d;
-            border-radius: 18px;
-            overflow: hidden;
-        }
+       .galeria {
+    width: 100%;
+}
 
-        .imagem img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
+.imagem-principal {
+    background: #151515;
+    border: 1px solid #29292d;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.imagem-principal img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.miniaturas {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.miniaturas img {
+    width: 75px;
+    height: 90px;
+    object-fit: cover;
+    border: 1px solid #29292d;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.miniaturas img:hover {
+    border-color: #7C3AED;
+    transform: translateY(-2px);
+}
 
         .informacoes h1 {
             font-size: 48px;
@@ -157,9 +181,27 @@
 
     <section class="detalhes">
 
-        <div class="imagem">
-            <img src="thor-render.jpg" alt="Thor - Render do projeto">
-        </div>
+     <div class="galeria">
+
+    <div class="imagem-principal">
+        <img id="imagemPrincipal"
+             src="thor-render.jpg"
+             alt="Thor - Render do projeto">
+    </div>
+
+    <div class="miniaturas">
+
+        <img src="thor-render.jpg"
+             alt="Thor - Render"
+             onclick="trocarImagem(this.src)">
+
+        <img src="RENDER • PROJETO.png"
+             alt="Thor - Render corpo inteiro"
+             onclick="trocarImagem(this.src)">
+
+    </div>
+
+</div>
 
         <div class="informacoes">
 
