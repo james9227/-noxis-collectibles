@@ -49,36 +49,24 @@
         }
 
  .detalhes {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 50px;
+    align-items: start;
 }
 
-.detalhes span {
-    color: #fff;
-    font-size: 15px;
+.imagem {
+    background: #151515;
+    border: 1px solid #29292d;
+    border-radius: 18px;
+    overflow: hidden;
 }
 
-.detalhes div {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+.imagem img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
-
-.detalhes small {
-    color: #888;
-    font-size: 10px;
-    letter-spacing: 1px;
-}
-
-.detalhes strong {
-    color: #fff;
-    font-size: 16px;
-    font-weight: 500;
-}
-
        .galeria {
     width: 100%;
 }
@@ -136,10 +124,26 @@
             margin-bottom: 30px;
         }
 
-        .informacoes h2 {
-            font-size: 24px;
-            margin-bottom: 12px;
-        }
+        .informacoes {
+    padding-top: 0;
+}
+
+.informacoes h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.categoria {
+    color: #aaa;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.informacoes .detalhes {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 25px;
+}
 
         .descricao {
             color: #aaa;
@@ -179,71 +183,39 @@
 
     <a href="index.html" class="voltar">← Voltar para o catálogo</a>
 
-    <section class="detalhes">
+  <section class="detalhes">
 
-     <div class="galeria">
-
-    <div class="imagem-principal">
-        <img id="imagemPrincipal"
-             src="thor-render.jpg"
-             alt="Thor - Render do projeto">
+    <div class="imagem">
+        <img src="thor-render.jpg" alt="Thor - Render do projeto">
     </div>
 
-    <div class="miniaturas">
+    <div class="informacoes">
 
-        <img src="thor-render.jpg"
-             alt="Thor - Render"
-             onclick="trocarImagem(this.src)">
+        <h1>Thor</h1>
 
-        <img src="RENDER • PROJETO.png"
-             alt="Thor - Render corpo inteiro"
-             onclick="trocarImagem(this.src)">
+        <div class="categoria">Figura • Resina</div>
 
-    </div>
-
-</div>
-
-        <div class="informacoes">
-
-       <h3>Thor</h3>
-
-<div class="categoria">Figura • Resina</div>
-
-<div class="detalhes">
-   <div class="detalhes">
-    <div>
-        <small>ESCALA</small>
-        <strong>1/6</strong>
-    </div>
-
-    <div>
-        <small>ALTURA</small>
-        <strong>39 cm</strong>
-    </div>
-
-    <div>
-        <small>LARGURA</small>
-        <strong>16 cm</strong>
-    </div>
-</div>
-<span class="status render">RENDER • PROJETO</span>
-
-       <h2>Sobre o projeto</h2>
-
-<p class="descricao">
-    Projeto desta figure do Thor produzida pelo nosso estúdio.
-    Esta imagem representa o render de referência do projeto.
-    A peça ainda está em processo de produção e pintura.
-</p>
-
-            <div class="preco">
-                R$ 950,00
-            </div>
-
+        <div class="detalhes">
+            <span>Escala 1/6</span>
+            <span>39 cm de altura</span>
+            <span>16 cm de largura</span>
         </div>
 
-    </section>
+        <span class="status render">RENDER • PROJETO</span>
 
+        <h2>Sobre o projeto</h2>
+
+        <p class="descricao">
+            Projeto desta figure do Thor produzida pelo o estúdio.
+            Esta imagem representa o render de referência do projeto.
+            A peça ainda está em processo de produção e pintura.
+        </p>
+
+        <div class="preco">R$ 950,00</div>
+
+    </div>
+
+</section>
 </main>
 
 </body>
