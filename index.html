@@ -110,19 +110,19 @@
       gap: 20px;
     }
 
-  .peça {
-    background: #151518;
-    border: 1px solid #29292d;
-    border-radius: 18px;
-      overflow: hidden;
-      transition: transform 0.2s;
-    }
-
-    .peça:hover {
-    transform: translateY(-4px);
-    border-color: #7C3AED;
+ .peca {
+  background: #151515;
+  border: 1px solid #29292d;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform 0.2s;
 }
 
+.peca a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
 .foto {
     width: 100%;
     height: 320px;
@@ -211,16 +211,22 @@
     <div class="grid">
 
 <article class="peca">
+
+  <a href="thor.html">
+
     <div class="foto">
-        <img src="thor-render.jpg" alt="Thor - Render do projeto">
+      <img src="thor-render.jpg" alt="Thor - Render do projeto">
     </div>
 
     <div class="info">
-        <h3>Thor</h3>
-        <div class="categoria">Figura • Resina</div>
-        <span class="status render">RENDER • PROJETO</span>
-        <div class="preco">R$ 00,00</div>
+      <h3>Thor</h3>
+      <div class="categoria">Figura • Resina</div>
+      <span class="status render">RENDER • PROJETO</span>
+      <div class="preco">R$ 00,00</div>
     </div>
+
+  </a>
+
 </article>
 
   <article class="peca">
