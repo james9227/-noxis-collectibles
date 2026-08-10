@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Thor | Noxis Collectibles</title>
 
     <style>
@@ -27,92 +29,91 @@
         .logo img {
             width: 220px;
             max-width: 70%;
-            height: auto;
         }
 
         .pagina {
-            max-width: 1100px;
-            margin: auto;
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 50px 20px;
         }
 
         .voltar {
             display: inline-block;
-            margin-bottom: 30px;
-            color: #a855f7;
+            margin-bottom: 35px;
+            color: #7c3aed;
             text-decoration: none;
             font-size: 16px;
         }
 
         .voltar:hover {
-            color: #c084fc;
+            color: #a78bfa;
         }
 
- .detalhes {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    gap: 50px;
-    align-items: start;
-}
+        /* LAYOUT PRINCIPAL */
 
-.imagem {
-    background: #151515;
-    border: 1px solid #29292d;
-    border-radius: 18px;
-    overflow: hidden;
-}
+        .detalhes {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+            gap: 50px;
+            align-items: start;
+        }
 
-.imagem img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-       .galeria {
-    width: 100%;
-}
+        /* IMAGEM */
 
-.imagem-principal {
-    background: #151515;
-    border: 1px solid #29292d;
-    border-radius: 18px;
-    overflow: hidden;
-}
+        .imagem {
+            background: #151515;
+            border: 1px solid #29292d;
+            border-radius: 18px;
+            overflow: hidden;
+        }
 
-.imagem-principal img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
+        .imagem img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
 
-.miniaturas {
-    display: flex;
-    gap: 10px;
-    margin-top: 12px;
-}
+        /* INFORMAÇÕES */
 
-.miniaturas img {
-    width: 75px;
-    height: 90px;
-    object-fit: cover;
-    border: 1px solid #29292d;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.miniaturas img:hover {
-    border-color: #7C3AED;
-    transform: translateY(-2px);
-}
+        .informacoes {
+            padding-top: 0;
+        }
 
         .informacoes h1 {
-            font-size: 48px;
-            margin-bottom: 12px;
+            font-size: 28px;
+            margin-bottom: 5px;
         }
 
         .categoria {
             color: #aaa;
             font-size: 16px;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        .detalhes-info {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .detalhes-info div {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .detalhes-info small {
+            color: #888;
+            font-size: 10px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .detalhes-info strong {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
         }
 
         .status {
@@ -124,31 +125,16 @@
             margin-bottom: 30px;
         }
 
-        .informacoes {
-    padding-top: 0;
-}
-
-.informacoes h1 {
-    font-size: 28px;
-    margin-bottom: 5px;
-}
-
-.categoria {
-    color: #aaa;
-    font-size: 16px;
-    margin-bottom: 25px;
-}
-
-.informacoes .detalhes {
-    display: flex;
-    gap: 40px;
-    margin-bottom: 25px;
-}
+        .informacoes h2 {
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
 
         .descricao {
             color: #aaa;
-            font-size: 17px;
-            line-height: 1.7;
+            font-size: 16px;
+            line-height: 1.8;
+            max-width: 600px;
             margin-bottom: 30px;
         }
 
@@ -158,14 +144,21 @@
             font-weight: bold;
         }
 
-        @media (max-width: 700px) {
+        /* RESPONSIVO */
+
+        @media (max-width: 800px) {
+
             .detalhes {
                 grid-template-columns: 1fr;
                 gap: 30px;
             }
 
-            .informacoes h1 {
-                font-size: 36px;
+            .informacoes {
+                padding-top: 0;
+            }
+
+            .detalhes-info {
+                gap: 25px;
             }
         }
     </style>
@@ -173,50 +166,77 @@
 
 <body>
 
-<header>
-    <div class="logo">
-        <img src="logo.PNG" alt="Noxis Collectibles">
-    </div>
-</header>
-
-<main class="pagina">
-
-    <a href="index.html" class="voltar">← Voltar para o catálogo</a>
-
-  <section class="detalhes">
-
-    <div class="imagem">
-        <img src="thor-render.jpg" alt="Thor - Render do projeto">
-    </div>
-
-    <div class="informacoes">
-
-        <h1>Thor</h1>
-
-        <div class="categoria">Figura • Resina</div>
-
-        <div class="detalhes">
-            <span>Escala 1/6</span>
-            <span>39 cm de altura</span>
-            <span>16 cm de largura</span>
+    <header>
+        <div class="logo">
+            <img src="logo.PNG" alt="Noxis Collectibles">
         </div>
+    </header>
 
-        <span class="status render">RENDER • PROJETO</span>
+    <main class="pagina">
 
-        <h2>Sobre o projeto</h2>
+        <a href="index.html" class="voltar">
+            ← Voltar para o catálogo
+        </a>
 
-        <p class="descricao">
-            Projeto desta figure do Thor produzida pelo o estúdio.
-            Esta imagem representa o render de referência do projeto.
-            A peça ainda está em processo de produção e pintura.
-        </p>
+        <section class="detalhes">
 
-        <div class="preco">R$ 950,00</div>
+            <!-- IMAGEM PRINCIPAL -->
+            <div class="imagem">
+                <img
+                    src="RENDER • PROJETO.png"
+                    alt="Thor - Render do projeto">
+            </div>
 
-    </div>
+            <!-- INFORMAÇÕES -->
+            <div class="informacoes">
 
-</section>
-</main>
+                <h1>Thor</h1>
+
+                <div class="categoria">
+                    Figura • Resina
+                </div>
+
+                <div class="detalhes-info">
+
+                    <div>
+                        <small>Escala</small>
+                        <strong>1/6</strong>
+                    </div>
+
+                    <div>
+                        <small>Altura</small>
+                        <strong>39 cm</strong>
+                    </div>
+
+                    <div>
+                        <small>Largura</small>
+                        <strong>16 cm</strong>
+                    </div>
+
+                </div>
+
+                <span class="status">
+                    RENDER • PROJETO
+                </span>
+
+                <h2>Sobre o projeto</h2>
+
+                <p class="descricao">
+                    Projeto de uma figura do Thor produzida para o estúdio.
+                    Esta imagem representa o render de referência do projeto.
+                    A peça ainda está em processo de produção e pintura.
+                </p>
+
+                <div class="preco">
+                    R$ 950,00
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
 
 </body>
+
 </html>
