@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Luffy | Noxis Collectibles</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0b0b0d;
+            color: #f5f5f5;
+        }
+
+        header {
+            padding: 25px 20px;
+            border-bottom: 1px solid #29292d;
+            text-align: center;
+        }
+
+        .logo img {
+            width: 220px;
+            max-width: 70%;
+        }
+
+        .pagina {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        .voltar {
+            display: inline-block;
+            margin-bottom: 35px;
+            color: #7c3aed;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .voltar:hover {
+            color: #a78bfa;
+        }
+
+        /* LAYOUT PRINCIPAL */
+
+        .detalhes {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+            gap: 50px;
+            align-items: start;
+        }
+
+        /* IMAGEM */
+
+        .imagem {
+            background: #151515;
+            border: 1px solid #29292d;
+            border-radius: 18px;
+            overflow: hidden;
+        }
+
+        .imagem img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* INFORMAÇÕES */
+
+        .informacoes {
+            padding-top: 0;
+        }
+
+        .informacoes h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        .categoria {
+            color: #aaa;
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+
+        .detalhes-info {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .detalhes-info div {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .detalhes-info small {
+            color: #888;
+            font-size: 10px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .detalhes-info strong {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .status {
+            display: inline-block;
+            border: 1px solid #7c3aed;
+            border-radius: 20px;
+            padding: 8px 14px;
+            font-size: 13px;
+            margin-bottom: 30px;
+        }
+
+        .informacoes h2 {
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        .descricao {
+            color: #aaa;
+            font-size: 16px;
+            line-height: 1.8;
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+
+        .preco {
+            color: #7c3aed;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* RESPONSIVO */
+
+        @media (max-width: 800px) {
+
+            .pagina {
+                padding: 30px 15px;
+            }
+
+            .detalhes {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .informacoes {
+                padding-top: 0;
+            }
+
+            .detalhes-info {
+                gap: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo.PNG" alt="Noxis Collectibles">
+        </div>
+    </header>
+
+    <main class="pagina">
+
+        <a href="index.html" class="voltar">
+            ← Voltar para o catálogo
+        </a>
+
+        <section class="detalhes">
+
+            <!-- IMAGEM PRINCIPAL -->
+            <div class="imagem">
+                <img
+                    src="luffy-render2.JPG"
+                    alt="Luffy - Render do projeto">
+            </div>
+
+            <!-- INFORMAÇÕES -->
+            <div class="informacoes">
+
+                <h1>Luffy</h1>
+
+                <div class="categoria">
+                    Figura • Resina
+                </div>
+
+                <div class="detalhes-info">
+
+                    <div>
+                        <small>Escala</small>
+                        <strong>1/6</strong>
+                    </div>
+
+                </div>
+
+                <span class="status">
+                    DISPONÍVEL
+                </span>
+
+                <h2>Sobre a peça</h2>
+
+                <p class="descricao">
+                    Figura do Luffy produzida em resina, na escala 1/6.
+                    O projeto apresenta o personagem em uma pose dinâmica,
+                    com base temática e acabamento pensado para colecionadores.
+                </p>
+
+                <div class="preco">
+                    R$ 850,00
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
